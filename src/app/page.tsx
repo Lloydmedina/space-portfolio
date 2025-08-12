@@ -6,12 +6,22 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <div className="min-h-screen">
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about" className="py-20">
+          <About />
+        </section>
+        <section id="projects" className="py-20 bg-black/50">
+          <Projects />
+        </section>
+        <section id="contact" className="py-20">
+          <Contact />
+        </section>
+      </main>
+    </div>
   );
 }
